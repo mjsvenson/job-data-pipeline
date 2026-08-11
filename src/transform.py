@@ -1,13 +1,11 @@
 import psycopg2
+import json
+import os
+from dotenv import load_dotenv
+import logging
+import db
 
-conn = psycopg2.connect(
-    dbname="job_pipeline",
-    user="postgres",
-    password="password",
-    host="localhost",
-    port="5432"
-)
-
+conn = db.connect()
 cur = conn.cursor()
 
 cur.execute("SELECT job_json FROM raw_jobs")
