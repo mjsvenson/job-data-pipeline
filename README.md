@@ -39,14 +39,14 @@ This is an example of the result of the transform script.
 
 ![example of the result of the transform script](./images/ExampleTransformDB.JPG)
 
-
-## Why I built it this way.
+## Why I built it this way
 
 ## What are the limits and next steps
 
 ### Limits
 
 ### Next steps:
+- [ ] Refactor file structure and create a better README
 - [ ] Snowflake Implementation
 - [ ] dbt Implementation
 - [ ] Production-harden the pipeline ()
