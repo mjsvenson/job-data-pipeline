@@ -31,6 +31,14 @@ python transform.py
 
 ## What does the end result look like?
 
+This is an example of the result of the ingestion script.
+
+![example of the result of the ingestion script](./images/ExampleIngestionDB.JPG)
+
+This is an example of the result of the transform script.
+
+![example of the result of the transform script](./images/ExampleTransformDB.JPG)
+
 
 ## Why I built it this way.
 
