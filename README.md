@@ -3,7 +3,7 @@ Matthew Svenson, 2026
 matthewjsvenson@gmail.com
 
 ## What is this?
-A data pipeline designed to extract, transform, and load data from the Adzuna API onto a local database of your choosing. For this example I am using a local Postgres database.
+A data pipeline designed to extract, load, and transform (ELT) data from the Adzuna API onto a local database of your choosing. For this example I am using a local Postgres database.
 
 ## How does it work?
 Adzuna API -> ingestion.py -> Local Postgres Database -> transform.py -> Local Postgres Database
@@ -43,11 +43,10 @@ This is an example of the result of the transform script.
 
 ## Why I built it this way.
 
-## What are the limits and next steps.
+## Limits
+- Currently the rows also log when they are loaded, causing duplicate rows to be common. Check the first two rows of the Ingestion Example image and you can see that they are the same job with the same ID, they were just loaded into the database at different times.
 
-### Limits
-
-### Next steps:
+## Next steps:
 - [ ] Refactor file structure and create a better README
 - [ ] Snowflake Implementation
 - [ ] dbt Implementation
