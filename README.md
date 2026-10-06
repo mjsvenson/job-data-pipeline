@@ -1,4 +1,6 @@
 # Data Engineering Jobs Pipeline
+Matthew Svenson, 2026
+matthewjsvenson@gmail.com
 
 ## What is this?
 A data pipeline designed to extract, transform, and load data from the Adzuna API onto a local database of your choosing. For this example I am using a local Postgres database.
@@ -9,7 +11,7 @@ Adzuna API -> ingestion.py -> Local Postgres Database -> transform.py -> Local P
 ## How do I run it?
 To run this, make sure you have Postgres SQL (PostgreSQL 18.3) installed as well as Python(Python 3.14.6). 
 
-Create a .env file with these variables included in the document:
+Create a .env file with these variables included, make sure to throw this file in the same directory as the rest of the repo:
 - apikey: The Adzuna API key that you are pulling the data from.
 - appid: The appid that is given to you in your Adzuna API Account
 - appkey: The appkey that is included in your apikey at the end of the url. Everything after the '=' until the end of the url
@@ -39,9 +41,9 @@ This is an example of the result of the transform script.
 
 ![example of the result of the transform script](./images/ExampleTransformDB.JPG)
 
-## Why I built it this way
+## Why I built it this way.
 
-## What are the limits and next steps
+## What are the limits and next steps.
 
 ### Limits
 
