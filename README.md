@@ -43,6 +43,8 @@ This is an example of the result of the transform script.
 
 ## Why I built it this way.
 
+I picked the tools for this project (Postgres, Adzuna API, Python, etc.) mainly because I wanted to learn more about these technologies and get a deeper understanding of them.
+
 ## Limits
 - Currently the rows also log when they are loaded, causing duplicate rows to be common. Check the first two rows of the Ingestion Example image and you can see that they are the same job with the same ID, they were just loaded into the database at different times.
 
